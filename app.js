@@ -6,7 +6,7 @@ var stripe = require('stripe')(process.env.STRIPE_KEY),
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/health', function(req, res) {
+app.get('/api/health', function(req, res) {
   res.send(200);
 });
 
