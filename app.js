@@ -6,6 +6,10 @@ var stripe = require('stripe')(process.env.STRIPE_KEY),
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.get('/health', function(req, res) {
+  res.send(200);
+});
+
 app.post('/api/charge', function(req, res) {
     var b = req.body,
         token = b.stripeToken,
