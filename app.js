@@ -5,7 +5,6 @@ var stripe = require('stripe')(process.env.STRIPE_KEY),
     app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(__dirname + '/public'));
 
 app.post('/api/charge', function(req, res) {
     var b = req.body,
