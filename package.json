@@ -1,0 +1,16 @@
+{
+  "name": "stripe-charge",
+  "version": "0.0.0",
+  "description": "Simple node.js server to process Stripe charges. First, it create's a customer record, then it processes the charge.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "dhcole",
+  "license": "bsd",
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "express": "^4.10.1",
+    "stripe": "^2.8.0"
+  }
+}
